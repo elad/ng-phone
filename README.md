@@ -31,7 +31,7 @@ myApp.controller('myController', function ($scope, ngPhone) {
   $scope.phone = '+12125556666';
   
   // Format
-  ngPhone.format($scope.phone, 'local', 'US');
+  var formattedPhone = ngPhone.format($scope.phone, 'local', 'US');
   
   // Validate
   var isValid = ngPhone.isValidNumber($scope.phone, 'US');
