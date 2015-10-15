@@ -1,5 +1,5 @@
 angular.module("ng-phone", [])
-.filter('phone', function (ngPhone) {
+.filter('phone', ['ngPhone', function (ngPhone) {
   return function (number, format, country) {
     if (!number) {
       return '';
@@ -7,7 +7,7 @@ angular.module("ng-phone", [])
 
     return ngPhone.format(number, country, format);
   }
-})
+}])
 .service("ngPhone", function() {
 
 __COMPILED_CLOSURE__
