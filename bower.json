@@ -1,7 +1,7 @@
 {
   "name": "ngPhone",
   "main": "ng-phone.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/elad/ng-phone",
   "authors": [
     "Elad Efrat <elad@iNNU.ORG>"
